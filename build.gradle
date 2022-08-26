@@ -1,5 +1,19 @@
 plugins {
     id 'java'
+    id 'application'
+    id 'checkstyle'
+}
+
+application {
+    mainClass = "hexlet.code.App"
+}
+
+compileJava {
+    options.release = 17
+}
+
+run {
+    standardInput = System.in
 }
 
 group 'hexlet.code'
